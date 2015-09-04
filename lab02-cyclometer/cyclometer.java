@@ -12,6 +12,7 @@ public class cyclometer {
     double feetPerMile=5280;  //feet in a mile
     double inchesPerFoot=12;   //inches in a foot
     double  secondsPerMinute=60;  //seconds in a minute
+    double PI=3.14159;
     double distanceTrip1, distanceTrip2,totalDistance; 
     
    System.out.println("Trip 1 took "+ (secsTrip1/secondsPerMinute)+" minutes and had "+

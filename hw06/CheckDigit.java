@@ -36,13 +36,19 @@ if (scan.hasNext()) //activates if not double
   in=scan.next(); //stores string in variable
  
 System.out.println (in);
-for (int i=in.length()-1; i<0; i--) {
+/*for (int i=in.length()-1; i<0; i--) {
  if (in.charAt(i)=='a' || in.charAt(i)== 'b' || in.charAt(i)== 'c' || in.charAt(i)== 'd' || in.charAt(i)== 'e' || in.charAt(i)== 'f' || in.charAt(i)== 'g')) //only checks for lower case {
   System.out.println ("Invalid value. Try again");
   in=scan.next();
- }
+ }*/
  
- 
+ int b=10;
+ int c=0;
+ for (int i=0; i<in.length(); i++)
+ {
+  int a=Integer.parseInt(in.charAt(i));
+  c=c+(a*b);
+  b--;
  } 
 
  

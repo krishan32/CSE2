@@ -55,7 +55,7 @@ System.out.println ("Invalid input. Try again");
  while (Wednesdayexpenses<0)
  {
   System.out.println ("Invalid input. Try again");
-  Wednesdayexpenses=scan.nestDouble();
+  Wednesdayexpenses=scan.nextDouble();
  }
 i++;
 }

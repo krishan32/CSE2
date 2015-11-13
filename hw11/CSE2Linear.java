@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.*;
 import java.util.Scanner;
-public class Linear{
+public class CSE2Linear{
 
 //scrambles array-randomley generates int within size of array-switches it with first element
 public static void scramble (int [] q)
@@ -69,7 +69,7 @@ public static void binarysearch(int [] a, int y)
   }
  }
 
-if (low>high) {
+if (low>=high) {
  System.out.println("The number was not found in the array. It took "+count+" many comparisons.");
  
 }  
@@ -82,6 +82,7 @@ public static void main (String [] args) {
 
 Scanner Scan=new Scanner(System.in);
 int[] grades=new int[15];
+int checker=-1;
 for(int i=0; i<15; i++)
 {
  System.out.println("Enter an integer");
@@ -100,14 +101,19 @@ for(int i=0; i<15; i++)
   String temp=Scan.next();
   System.out.println("Sorry, your answer must be an integer");
   }
-  input=Scan.nextInt();
+  int x=Scan.nextInt();
+  while(x<=checker);
+  {
+  System.out.println("Sorry, you have an error");
+  x=Scan.nextInt(); 
+  } 
+   input=x; //stores user input in variable that will be sent to array
+   checker=x; //stores input so it can be compared with incoming input-progran does not work-does not reject input greater than last input-have to sort array
+   
   }
   
   
-  //if (grades[i+1]<grades[i])
-  //{
-  //System.out.println("Sorry, your input should be greater than or equal to the previous input");
-  grades[i]=input; //after checking to see if values are valid, value is stored in array
+  grades[i]=input;
   }
   System.out.println("Sorted:");
   sorted(grades);

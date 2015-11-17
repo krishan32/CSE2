@@ -8,7 +8,7 @@ int size=(int)(Math.random()*11)+10;
 int [] [] ragged= new int[size][];
 for(int i=0; i<size; i++ )
 {
- ragged[i]=new int[(int)(Math.random()*11)+10];
+ ragged[i]=int[(int)(Math.random()*11)+10];
  }
 
 for(int x=0; x<size; x++)
